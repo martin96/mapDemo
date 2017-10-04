@@ -36,14 +36,14 @@
         app:layout_constraintTop_toBottomOf="@id/nextime" />
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="96dp"
+        android:id="@+id/icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:src="@drawable/ic_next_week_black_24dp"
-        app:layout_constraintBottom_toTopOf="@id/signInButton"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description" />
+        app:layout_constraintTop_toBottomOf="parent" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/signInButton"

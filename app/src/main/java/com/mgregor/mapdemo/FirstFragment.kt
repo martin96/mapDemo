@@ -164,7 +164,7 @@ class FirstFragment : Fragment(), GoogleApiClient.OnConnectionFailedListener {
 				if (result.isSuccess) {
 					val account: GoogleSignInAccount? = result.signInAccount
 					firebaseAuthWithGoogle(account)
-					//user.text = "${account?.displayName}\n${account?.email}"
+					user.text = "${account?.displayName}\n${account?.email}"
 				}
 			} else {
 				val place: Place? = PlacePicker.getPlace(context, data)

@@ -1,14 +1,10 @@
 package com.mgregor.mapdemo
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_first.view.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -51,9 +47,5 @@ class MainActivity : AppCompatActivity() {
 			0 -> 0.95f
 			else -> 1f
 		}
-	}
-
-	override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-		super.onActivityResult(requestCode, resultCode, data)
 	}
 }
